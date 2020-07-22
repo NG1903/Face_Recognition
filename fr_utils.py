@@ -189,7 +189,7 @@ def load_dataset():
     return train_set_x_orig, train_set_y_orig, test_set_x_orig, test_set_y_orig, classes
 
 def img_to_encoding(image_path, model):
-    img = image.load_img(image_path, target_size=(96, 96))
+    img = image.load_img(image_path, target_size=(96, 96, 3))
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
     x = x/255.0

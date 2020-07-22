@@ -30,6 +30,6 @@ while True:
 
 
 roi = img[Y-75:Y+H+25, X-15:X+W+15]
-cv2.imwrite("roi.jpg", roi)
+cv2.imwrite("image.jpg", roi)
 #cv2.imwrite("filename.jpg",img)
 cap.release()
